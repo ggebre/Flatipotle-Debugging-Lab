@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 
-const ProteinForm = () => {
+const ProteinForm = (props) => {
+  
   return (
     <Fragment>
       <h1><label htmlFor="protein">Protein</label></h1>
@@ -11,7 +12,7 @@ const ProteinForm = () => {
               id="barbacoa"
               type="checkbox"
               value="Barbacoa"
-              name="protein"
+              name="protein" 
               checked={ props.protein.includes('Barbacoa') }
               onChange={ props.handleChange }
             />
